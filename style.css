@@ -1,0 +1,54 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+/*
+blue:rgb(46,134,252)
+
+
+*/
+.cir {
+  height: 250px;
+  width: 250px;
+  border-radius: 50%;
+  position: absolute;
+  background-color: white;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+canvas {
+  position: relative;
+  --blue-color: rgb(46, 134, 252);
+  --red-color: rgb(254, 45, 35);
+  --green-color: rgb(0, 172, 74);
+  --orange-color: rgb(255, 187, 0);
+  background-color: gray;
+  border-radius: 50%;
+  background-image: conic-gradient(
+    white 0deg,
+    white 45deg,
+    var(--blue-color) 45deg,
+    var(--blue-color) 90deg,
+    var(--green-color) 90deg,
+    var(--green-color) 180deg,
+    var(--orange-color) 180deg,
+    var(--orange-color) 270deg,
+    var(--red-color) 270deg,
+    var(--red-color) 360deg
+  );
+  transform: rotate(45deg);
+}
+.rec {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  background-color: rgb(46, 134, 252);
+  transform: translate(9%, -45%);
+  height: 70px;
+  width: 183.5px;
+  border-bottom-right-radius: 30%;
+  border-top-right-radius: 10px;
+}
